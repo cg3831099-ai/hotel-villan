@@ -1,0 +1,457 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #F8F4EC;
+}
+
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-box {
+    background-color: #FFFFFF;
+    padding: 45px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(15, 61, 62, 0.15);
+    width: 360px;
+    text-align: center;
+    border-top: 4px solid #C9A66B;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.login-box h1 {
+    color: #0F3D3E;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.login-box p {
+    color: #C9A66B;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    color: #2B2B2B;
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 11px;
+        border: 1px solid #e0dcd2;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #F8F4EC;
+    color: #2B2B2B;
+}
+    /* ===== HEADER ===== */
+.header {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-header img {
+    width: 40px;
+}
+
+.logo-header span {
+    color: #0F3D3E;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #2B2B2B;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #C9A66B;
+}
+
+.nav-menu .btn-nav {
+    background-color: #0F3D3E;
+    color: #FFFFFF !important;
+    padding: 10px 22px;
+    border-radius: 6px;
+}
+
+.nav-menu .btn-nav:hover {
+    background-color: #C9A66B;
+    color: #0F3D3E !important;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(rgba(15,61,62,0.75), rgba(15,61,62,0.75)), url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-subtitle {
+    color: #C9A66B;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.hero-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #F8F4EC;
+}
+
+.btn-hero {
+    background-color: #C9A66B;
+    color: #0F3D3E;
+    padding: 15px 35px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #FFFFFF;
+}
+
+/* ===== SECCIONES (título común) ===== */
+.habitaciones, .servicios {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.habitaciones h2, .servicios h2 {
+    color: #0F3D3E;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-seccion {
+    color: #C9A66B;
+    margin-bottom: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ===== HABITACIONES ===== */
+.habitaciones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card-habitacion {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card-habitacion:hover {
+    transform: translateY(-8px);
+}
+
+.card-habitacion img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    color: #0F3D3E;
+    margin-bottom: 8px;
+}
+
+.card-info p {
+    color: #2B2B2B;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    display: block;
+    color: #C9A66B;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.btn-reservar {
+    display: inline-block;
+    background-color: #0F3D3E;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-reservar:hover {
+    background-color: #C9A66B;
+    color: #0F3D3E;
+}
+
+/* ===== SERVICIOS ===== */
+.servicios {
+    background-color: #F8F4EC;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card-servicio {
+    background-color: #FFFFFF;
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.card-servicio {
+    padding: 0 0 25px 0;
+    overflow: hidden;
+}
+
+.card-servicio img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-servicio h3,
+.card-servicio p {
+    padding: 0 15px;    
+}
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #0F3D3E;
+    color: #F8F4EC;
+    padding: 50px 30px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-col h3 {
+    color: #C9A66B;
+    margin-bottom: 12px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #F8F4EC;
+}
+
+.footer-copy {
+    text-align: center;
+    font-size: 13px;
+    color: #C9A66B;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
+/* ===== LOGO SIN IMAGEN ===== */
+.logo-icon {
+    color: #C9A66B;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.logo-icon-login {
+    color: #C9A66B;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+/* ===== BOTÓN LOGIN/REGISTRO ===== */
+.btn-login {
+    width: 100%;
+    padding: 13px;
+    background-color: #0F3D3E;
+    color: #C9A66B;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #C9A66B;
+    color: #0F3D3E;
+}
+.link-registro {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #2B2B2B;
+}
+
+.link-registro a {
+    color: #C9A66B;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* ===== MENSAJES DE ERROR ===== */
+.input-group.error input {
+    border-color: #c0392b;
+    background-color: #fdf0ef;
+}
+
+.mensaje-error {
+    color: #c0392b;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.input-group.error .mensaje-error {
+    display: block;
+}
+
+.alerta-general {
+    background-color: #fdf0ef;
+    color: #c0392b;
+    border: 1px solid #e6b3af;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.alerta-general.mostrar {
+    display: block;
+}
+
+.alerta-exito {
+    background-color: #eaf4ea;
+    color: #2e7d32;
+    border: 1px solid #a8d5a8;
+}
+/* ===== PÁGINA DE ERROR (404 / 500) ===== */
+.error-box {
+    text-align: center;
+}
+
+.error-codigo {
+    font-size: 64px;
+    font-weight: bold;
+    color: #C9A66B;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.error-box h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.error-mensaje {
+    color: #2B2B2B !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    font-size: 14px !important;
+    line-height: 1.5;
+    margin-bottom: 25px !important;
+}
+
+.btn-error-volver {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+

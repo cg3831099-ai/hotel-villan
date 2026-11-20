@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Villafán - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-page">
+
+     <div class="login-container">
+        <div class="login-box">
+            <div class="logo-icon-login">✦</div>
+            <h1>Hotel Villafán</h1>
+            <p>Iniciar Sesión</p>
+
+                    <form id="loginForm">
+            <div class="alerta-general" id="alertaLogin"></div>
+
+            <div class="input-group" id="grupoUsuario">
+                <label for="usuario">Usuario o Correo</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario">
+                <span class="mensaje-error">Por favor ingresa tu usuario o correo</span>
+            </div>
+
+            <div class="input-group" id="grupoPassword">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña"> 
+                <span class="mensaje-error">Por favor ingresa tu contraseña</span>
+            </div>
+
+            <button type="submit" class="btn-login">Ingresar</button>
+
+            <p class="link-registro">¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

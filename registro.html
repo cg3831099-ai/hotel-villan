@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Villafán - Crear Cuenta</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-page">
+
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo-icon-login">✦</div>
+            <h1>Hotel Villafán</h1>
+            <p>Crear Cuenta</p>
+
+                  <form id="registroForm">
+            <div class="alerta-general" id="alertaRegistro"></div>
+
+            <div class="input-group" id="grupoNombre">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo">
+                <span class="mensaje-error">Por favor ingresa tu nombre completo</span>
+            </div>
+
+            <div class="input-group" id="grupoCorreo">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+                <span class="mensaje-error">Ingresa un correo válido</span>
+            </div>
+
+            <div class="input-group" id="grupoPassword">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Crea una contraseña">
+                <span class="mensaje-error">La contraseña debe tener al menos 6 caracteres</span>
+            </div>
+
+            <div class="input-group" id="grupoConfirmar">
+                <label for="confirmar">Confirmar Contraseña</label>
+                <input type="password" id="confirmar" name="confirmar" placeholder="Repite tu contraseña">
+                <span class="mensaje-error">Las contraseñas no coinciden</span>
+            </div>
+
+            <button type="submit" class="btn-login">Crear Cuenta</button>
+
+            <p class="link-registro">¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </form>
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
